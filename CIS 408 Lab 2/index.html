@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> CIS 408 Project 2, Problem 1</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="p2.css"/>
+</head>
+<body>
+
+<div id="tabheader">
+  <ul>
+    <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen"style="text-decoration:none">Home</a></li>
+    <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'News')"style="text-decoration:none">News</a></li>
+    <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Courses')"style="text-decoration:none">Courses</a></li>
+    <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Class Rank')"style="text-decoration:none">Class Rank</a></li>
+    <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Contact')"style="text-decoration:none">Contact</a></li>
+  </ul>
+</div>
+
+<div id="Home" class="tabcontent">
+  <h3>HOME</h3>
+  <p>Name: Nam Do</p>
+  <p>ID: 2594704</p>
+  <p>Email: monkey89@gmail.com</p>
+  <p>http://nam.com</p>
+  <img class="mySlides" src="1.jpg" style="width:20%", style="height:50%">
+  <img class="mySlides" src="2.jpg" style="width:30%", style="height:30%">
+  <img class="mySlides" src="3.jpg" style="width:30%", style="height:30%">
+</div>
+
+
+<div id="News" class="tabcontent">
+  <iframe src="https://www.tutorialspoint.com/" width="500" height="500"></iframe>
+  <iframe src="http://www.mercurynews.com/" width="500" height="500"></iframe>
+</div>
+
+<div id="Courses" class="tabcontent">
+  <ul>
+    <li>CIS 470: Mobile App Development</li>
+    <li><a href="CIS408/CIS408.html">CIS 408: Internet Computing</a></li>
+    <li>EEC 494: Senior Project</li>
+    <li>CIS 368: Object Oriented Programming</li>
+  </ul>
+</div>
+
+<div id="Class Rank" class="tabcontent">
+  <form action="demo_form.asp">
+  CSU ID: <input type="text" ><br>
+  <input type="submit" value="Rank">
+</form>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>CONTACT</h3>
+  <p>Phone: 216-357-4421</p>
+  <p>Email: mrmonkey@yahoo.com</p>
+  <p>Address: 2121 Euclid Ave, Cleveland, OH 44115 </p>
+</div>
+
+<script>
+//picture script
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+//picture script ends
+
+function openTab(evt, cityTab) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    document.getElementById(cityTab).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+</script>
+</body>
+</html>

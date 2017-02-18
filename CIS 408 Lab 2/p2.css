@@ -1,0 +1,12 @@
+
+.tabcontent{
+  min-width: 100%;
+	background-color: #e6e6e6;
+	box-sizing: border-box;
+  padding: 0.7em;
+}
+
+
+.tablinks .tab {
+    color: #c49137;
+}
