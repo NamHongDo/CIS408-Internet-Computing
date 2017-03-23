@@ -1,0 +1,9 @@
+<script type="text/javascript" src="cis408-template-processor.js"></script>
+<script>
+var template = 'My favorite month is {{month}} but not the day {{day}} or the year {{year}}';
+var dateTemplate = new Cis408TemplateProcessor(template);
+
+var dictionary = {month:'June', day: '20', year:'2015'};
+var str = dateTemplate.fillIn(dictionary);
+alert(str);
+</script>

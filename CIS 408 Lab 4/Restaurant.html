@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css"  href="lab4.css">
+    <script type="text/javascript" src="drop.js"></script>
+  </head>
+  <body>
+    <button onclick="drop()" class="dropbtn">Dropdown</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a id="name" href="#" onclick="myfunction(this.id);">NAME</a>
+      <a id="address"href="#" onclick="myfunction(this.id);">ADDRESS</a>
+      <a id="business"href="#" onclick="myfunction(this.id);">BUSINESS HOURS</a>
+      <a id="menu" href="#" onclick="drop1()" class="dropmenu">MENU</a>
+      <a id="service"href="#" onclick="myfunction(this.id);">SERVICE and FEATURES</a>
+    </div>
+
+    <div class="test">
+      <div id="name1"></div>
+      <div id="address1"></div>
+      <div id="business1"></div>
+      <div id="service1"></div>
+      <div id= "menu1" class="menu-drop">
+        <a id="BREAKFAST" href="#" onclick="myfunction1(this.id);">BREAKFAST</a>
+        <a id="BRUNCH" href="#" onclick="myfunction1(this.id);">BRUNCH</a>
+        <a id="LUNCH" href="#" onclick="myfunction1(this.id);">LUNCH</a>
+        <a id="DINNER" href="#" onclick="myfunction1(this.id);">DINNER</a>
+        <a id="DRINKS" href="#" onclick="myfunction1(this.id);">DRINKS</a>
+      </div>
+      <div id="menu2"></div>
+      <div id="menu3"></div>
+      <div id="menu4"></div>
+    </div>
+
+  </body>
+  <script>
+    function myfunction(id){
+      var lol=getData.JSON(id);
+    }
+
+    function myfunction1(id){
+      var hmm=getData.XML(id);
+    }
+  </script>
+
+</html>

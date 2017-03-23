@@ -1,0 +1,134 @@
+.dropbtn {
+ background-color: #4CAF50;
+ color: white;
+ padding: 16px;
+ font-size: 12px;
+ border: none;
+ cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+ font-size: 12px;
+ display: none;
+ position: absolute;
+ background-color: #f9f9f9;
+ min-width: 20px;
+ overflow: auto;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  font-weight: 900;
+  color: #006622;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.menu-drop{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 20px;
+  overflow: auto;
+}
+
+.menu-drop a {
+  color: #006622;
+  font-size: 14px;
+  font-weight:500;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+background-color: #f1f1f1;
+}
+
+.menu-drop a:hover {
+background-color: #f1f1f1;
+}
+
+.show {
+  display:block;
+}
+
+.show1{
+  display:block;
+}
+
+div #name1{
+  color:#016b27;
+  position: absolute;
+  top: 22px;
+  left: 150px;
+  font-size: 22px;
+  font-weight: bold;
+}
+div #address1{
+  color: #016b27;
+  position: absolute;
+  top: 26px;
+  left: 300px;
+  font-size: 18px;
+}
+
+div #business1{
+  color:#016b27;
+  position: absolute;
+  top: 240px;
+  right: 200px;
+  font-size: 12px;
+}
+
+div #service1{
+  color:#016b27;
+  position: absolute;
+  top: 26px;
+  right: 300px;
+  font-size: 15px;
+}
+
+
+div #menu1{
+  font-family: Charcoal, sans-serif;
+  font-weight: 500;
+  position:absolute;
+  top: 250px;
+  left: 10px;
+  font-size: 14px;
+}
+div #BREAKFAST a{
+
+}
+div #menu2{
+    color: #009900;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    position:absolute;
+    left:300px;
+    top:150px;
+}
+
+div #menu3{
+    color: #009900;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    position:absolute;
+    left: 800px;
+    top:150px;
+}
+
+div #menu4{
+    color: #004d00;
+    font-family: Charcoal, sans-serif;
+    font-weight: 900;
+    position:absolute;
+    left: 170px;
+    top:150px;
+}
